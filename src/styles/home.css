@@ -1,0 +1,125 @@
+.home-page{
+    padding: 3rem 3rem;
+}
+.hero-section{
+    display: flex;
+    justify-content: space-between;
+    padding: 4rem 3rem;
+    height: 25rem;
+}
+.hero-intro {
+    padding-top: 3rem;
+    font-family: 'Montserrat', sans-serif;
+    z-index: 2;
+}
+.hero-intro h2{
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    color: var(--primary-color);
+}
+.hero-intro  p{
+    color: #000;
+}
+.hero-image-div{
+    background: var(--main-color);
+    width: 20rem;
+    height:35rem;
+    border-radius: 2px;
+    position: relative;
+    top: -10rem;
+    right: -6rem;
+}
+
+.hero-image img{
+    transition: .3s;
+    width: 380px;
+    height: 380px;
+    position: absolute;
+    transform: translateX(-9rem) translateY(6rem);
+}
+.hero-button{
+    width:100%;
+}
+
+.so{
+    border-left: 5px solid var(--main-color) ;
+}
+.so p{
+    margin-left: 1rem;
+}
+.item{
+    position: relative;
+    min-width: 14rem;
+    min-height: 2rem;
+    padding: 20px;
+}
+/* .box {
+    position: absolute;
+    background: var(--main-color);
+    color: #fff;
+    padding: 5px 15px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  } */
+.item img{
+  width: 100%;
+  height: 70%;
+  border-radius: 15px;
+  pointer-events: none;
+}
+.specialoffers{
+    margin-top: 8rem;
+}
+.inner-carousel{
+    display: flex;
+}
+    
+.carousel{
+    overflow: hidden;
+    cursor: grab;
+    padding: 0 40px;
+    height: 20rem;
+    margin-top: 3rem;
+}
+
+@media screen and (max-width: 1050px){
+    .hero-image-div{
+        width: 16rem;
+        height: 30rem;
+
+    }
+ .hero-image img{
+     width: 250px;
+     height: 250px;
+     transition: .3s;
+ }
+}
+@media screen and (max-width: 850px){
+
+    .home-page{
+        padding: 3rem 1rem;
+        overflow: hidden;
+    }
+    
+    .hero-section{
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem 1rem;
+    }
+    .hero-image img{
+        width: 330px;
+        height: 330px;
+        transition: .3s;
+        transform: none;
+    }
+    .specialoffers{
+        margin-top: 24rem;
+    }
+    .hero-image-div{
+        top: 0;
+        right: 2.3rem;
+        align-items: center;
+        background: none;
+    }
+   }
