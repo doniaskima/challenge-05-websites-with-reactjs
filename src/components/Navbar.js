@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
+
 import {
     MdHome,
     MdCommentBank,
@@ -12,17 +13,11 @@ import "../styles/Navbar.css";
 function Navbar() {
     const [IsOpen, setIsOpen] = useState(false);
     const [nav, setnav] = useState(false);
-    const addShadow = () => {
-        if (window.scrollY >= 50) {
-            setnav(true);
-        } else {
-            setnav(false);
-        }
-    };
-    window.addEventListener("scroll", addShadow);
+
+
     return (
         <div>
-            <nav className={nav ? "shadowed" : null}>
+            <nav>
                 <div className="nav-logo">
                     <img src={NavBrand} alt="logo" />
                 </div>

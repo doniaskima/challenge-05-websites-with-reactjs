@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Mouse+Memoirs&family=Nunito:wght@200&family=Satisfy&display=swap");
+.NavHero {
+    color: white;
+    background: no-repeat url("../images/backg.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 800px;
+}
+
+.Hero {
+    margin: auto;
+    padding: 25px 0;
+    width: 90%;
+    max-width: 940px;
+}
+
+.heroDuo img {
+    max-height: 140px;
+}
+
+.NavHero h1 {
+    font-size: 80px;
+    font-family: "Satisfy", cursive;
+}
+
+.NavHero p {
+    margin: 20px auto;
+    font-size: 39px;
+    font-family: "Montserrat", sans-serif;
+    color: black;
+    font-weight: bold;
+}
+
+.actual-hero {
+    box-sizing: border-box;
+    overflow: hidden;
+    margin-top: -10vw;
+    transition: 0.5s;
+}
+
+.btn {
+    margin: auto;
+    border-radius: 30px;
+    width: 150px;
+    max-width: 60%;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    letter-spacing: 1.55px;
+    padding: 15px 20px;
+    color: #5238b1;
+    background-color: white;
+    font-size: 14px;
+}
+
+.fix {
+    position: relative;
+    display: flex;
+    height: 170px;
+}
+
+.unfix {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.btnWhite {
+    position: absolute;
+    width: 250px;
+    margin: 0 auto;
+    padding: 15px 20px;
+    bottom: calc(100vh - 100px);
+    right: 50%;
+    transform: translate(50%);
+    font-weight: 700;
+    font-size: 0.688rem;
+    line-height: 18px;
+    letter-spacing: 1.54px;
+    text-transform: uppercase;
+    border-radius: 25px;
+    border: none;
+    background-color: white;
+    color: #5238b1;
+    cursor: pointer;
+    transition: all 0.5s ease-in;
+}
+
+.btnWhite i {
+    font-size: 32px;
+}
+
+.btntransformed {
+    position: fixed;
+    bottom: 8rem;
+    right: 3rem;
+    width: 70px;
+    height: 70px;
+    padding: 10px;
+    background-color: #ef4b6c;
+    border-radius: 50%;
+    color: white;
+    display: grid;
+    place-content: center;
+}
+
+.infootview {
+    bottom: -5rem !important;
+}
+
+.displaynoneall {
+    display: none;
+}
+
+.floatHover:hover {
+    -webkit-animation: float 3s ease-in-out infinite both;
+    animation: float 3s ease-in-out infinite both;
+}
+
+@media (max-width: 1200px) {
+    .NavHero h1 {
+        font-size: 10vw;
+        margin-top: 50px;
+        line-height: 1;
+    }
+}
+
+@media (max-width: 850px) {
+    .heroDuo img {
+        margin-top: 100px;
+        max-height: none;
+        width: 50%;
+    }
+    .NavHero h1 {
+        font-size: 10vw;
+    }
+    .NavHero p {
+        font-size: 6vw;
+    }
+    .btntransformed {
+        bottom: 12rem;
+        right: 2.5rem;
+        width: 50px;
+        height: 50px;
+    }
+    .btnWhite i {
+        font-size: 24px;
+    }
+}
