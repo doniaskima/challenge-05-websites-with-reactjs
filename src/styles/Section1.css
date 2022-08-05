@@ -49,7 +49,7 @@
     display: none !important;
 }
 
-@media (max-width: 1000px) {
+@media (max-width:1000px) {
     .clientsGrid img {
         min-width: 50px;
     }
@@ -58,8 +58,48 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width:850px) {
+    .iconsgrid p {
+        display: none;
+    }
+    .iconsgrid h3 {
+        font-size: 3.5vw;
+        color: #212529;
+        font-weight: 400;
+    }
     .iconsgrid {
-        grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+        grid-template-columns: 1fr 1fr;
+    }
+    .clientsGrid {
+        justify-content: center;
+    }
+    .dissmall {
+        display: none;
+    }
+    .displaysmall {
+        width: 100%;
+        display: grid !important;
+    }
+    .clientsGrid {
+        gap: 15px;
+        width: 80%;
+    }
+    .clientsGrid img {
+        width: 100px;
+    }
+    .clientsGrid div {
+        width: 100%
+    }
+    .clientsGrid div div {
+        margin: auto;
+        padding: 0 30px;
+        width: 70%;
+        margin-bottom: 30px;
+    }
+    .client2 {
+        width: 85% !important;
+    }
+    .client1 {
+        width: 100% !important;
     }
 }
