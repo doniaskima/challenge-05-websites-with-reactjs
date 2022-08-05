@@ -24,3 +24,42 @@
     color: #626881;
     font-family: "Lore", serif;
 }
+
+.clientsGrid {
+    width: 940px;
+    max-width: 80%;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 100px;
+}
+
+.clientsGrid div div {
+    margin-top: 30px;
+    background-color: white;
+    min-height: 100px;
+    box-shadow: 0px 10px 100px 59px rgba(212, 217, 232, 0.2);
+    padding: 30px 40px;
+    border-radius: 16px;
+    display: grid;
+    place-content: center;
+}
+
+.displaysmall {
+    display: none !important;
+}
+
+@media (max-width: 1000px) {
+    .clientsGrid img {
+        min-width: 50px;
+    }
+    .clientsGrid div div {
+        padding: 30px 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .iconsgrid {
+        grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+    }
+}

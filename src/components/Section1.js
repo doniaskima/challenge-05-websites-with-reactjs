@@ -7,6 +7,15 @@ import item4 from "../images/4to-item.png";
 
 import item5 from "../images/5to-icon.png";
 import item6 from "../images/6to-icon.png";
+import teachable from "../images/teachable.png"
+import roger from "../images/roger.png"
+import grab from "../images/grab.png"
+import agoda from "../images/agoda.png"
+import hoopsai from "../images/hoopsai.png"
+import getsafe from "../images/getsafe.png"
+import flyr from "../images/flyr.png"
+import anyleads from "../images/anyleads.png";
+import crisp from "../images/crisp.png";
 import "../styles/Section1.css";
 const section1 = () => {
     return (
@@ -44,6 +53,32 @@ const section1 = () => {
                     <p>Travel Photography, Product Photography</p>
                 </div>
 
+            </div>
+            <h2 className="margincenter textcenter playfairFront">Clients</h2>
+            <p className="margincenter textcenter loraFont spacerBotLight">We’ve been working with teams around the world.</p>
+            <div className="clientsGrid flex margincenter">
+                <div className="dissmall">
+                    <div> <img src={teachable} alt="" />  </div>
+                </div>
+                <div className="dissmall">
+                    <div> <img src={roger} alt="" /> </div>
+                    <div> <img src={grab} alt="" /> </div>
+                </div>
+                <div>
+                    <div className="displaysmall"><img src={roger} alt="" /></div> 
+                    <div className='client2'><img src={hoopsai} alt="" /></div>
+                    <div className='client1'><img src={agoda} alt="" /></div>
+                    <div className='client2'><img src={getsafe} alt="" /></div>
+
+                    <div className="displaysmall"><img src={grab} alt="" /></div>
+                </div>
+                <div className='dissmall'>
+                    <div><img src={flyr} alt="" /></div>
+                    <div><img src={anyleads} alt="" /></div>
+                </div>
+                <div className='dissmall'>
+                    <div><img src={crisp} alt="" /></div>
+                </div>
             </div>
         </div>
     )
