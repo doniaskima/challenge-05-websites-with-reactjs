@@ -1,0 +1,26 @@
+.iconsgrid {
+    margin-bottom: 15vw;
+    grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+    width: 940px;
+    max-width: 80%;
+    gap: 50px 0;
+}
+
+.iconsgrid img {
+    width: 80px;
+}
+
+.iconsgrid h3 {
+    margin: 15px auto;
+    font-family: "Montserrat", sans-serif;
+    color: #212529;
+    font-weight: 600;
+}
+
+.iconsgrid p {
+    font-size: 15px;
+    line-height: 1.73;
+    letter-spacing: 0.5px;
+    color: #626881;
+    font-family: "Lore", serif;
+}
