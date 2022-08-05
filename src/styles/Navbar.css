@@ -7,7 +7,6 @@ nav {
     justify-content: space-between;
     position: fixed;
     z-index: 99;
-    filter: contrast(200%);
 }
 
 nav .nav-logo {
@@ -43,13 +42,13 @@ nav ul li .link {
 nav ul li .active-link {
     padding: 5px 15px;
     border-radius: 2px;
-    background: #c71585;
+    background: #ef4b6c;
     color: #fff;
     font-weight: 600;
 }
 
 nav ul li .active {
-    border-bottom: 2px solid #c71585;
+    border-bottom: 2px solid #ef4b6c;
 }
 
 .menu {
@@ -84,7 +83,7 @@ nav ul li .active {
     width: 100%;
     top: 0;
     right: 0;
-    background-color: #c71585;
+    background-color: #ef4b6c;
     transition: all 0.5s ease;
 }
 
@@ -113,7 +112,7 @@ nav ul li .active {
 .close-icon {
     height: 2px;
     width: 30px;
-    background-color: #c71585;
+    background-color: #ef4b6c;
     display: block;
     cursor: pointer;
     border-radius: 20px;
@@ -142,7 +141,7 @@ nav ul li .active {
         display: block;
         padding-top: 1rem;
         margin-top: 5rem;
-        background: #c71585;
+        background: #ef4b6c;
         height: 20rem;
         z-index: 99;
         position: fixed;

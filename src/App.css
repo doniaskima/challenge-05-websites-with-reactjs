@@ -1,38 +1,148 @@
-.App {
-  text-align: center;
+/* Box sizing rules */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    overflow-x: hidden;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+    text-decoration: none;
 }
 
-.App-link {
-  color: #61dafb;
+
+/* Make images easier to work with */
+
+img,
+picture {
+    max-width: 100%;
+    display: block;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+.margincenter {
+    margin: auto;
+}
+
+.textcenter {
+    text-align: center;
+}
+
+.spacerBotLight {
+    margin-bottom: 20px;
+}
+
+.spacerBot {
+    margin-bottom: 30px;
+}
+
+.spacerTopLight {
+    margin-top: 20px;
+}
+
+.spacerTop {
+    margin-top: 30px;
+}
+
+.spacerBot2 {
+    margin-bottom: 50px !important;
+}
+
+.spacerTop2 {
+    margin-top: 50px;
+}
+
+.spacerTop3 {
+    margin-top: 70px !important;
+}
+
+.flex {
+    display: flex;
+}
+
+.apart {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.grid {
+    display: grid;
+}
+
+.grid2fr {
+    grid-template-columns: 1fr 1fr;
+}
+
+.gridConCenter {
+    place-content: center;
+}
+
+.whiteT {
+    color: white;
+}
+
+.playfairFont {
+    font-family: 'Playfair Display', serif;
+}
+
+.loraFont {
+    font-family: 'Lora', serif;
+}
+
+.montserrat {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+    font-size: 56px;
+    line-height: 1.06;
+    letter-spacing: 1.88px;
+    font-weight: 600;
+    color: #212529;
+}
+
+.backshadow {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(248, 249, 252, 1) 25%, rgba(248, 249, 252, 1) 70%, rgba(255, 255, 255, 1) 95%);
 }

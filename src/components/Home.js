@@ -18,7 +18,7 @@ const Home = ({ footView }) => {
                     </div>
                     <h1>pixel lovers & code players,
                         <br />we are digital seekers !</h1>
-                    <p>A team of passionate designers and developers from Yogyakarta</p>
+                    <p>A team of passionate designers and developers  </p>
                 </div>
                 <div className="fix" ref={ref}>
                     <div className="unfix">
