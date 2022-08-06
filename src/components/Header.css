@@ -1,14 +1,25 @@
 .header-nav {
-  position: sticky;
-  box-shadow: 0px 10px 20px #ccc;
-  margin-bottom: 10px;
+    position: sticky;
+    box-shadow: 0px 10px 20px #ccc;
+    margin-bottom: 10px;
 }
+
 .header-ul {
-  display: flex;
-  flex: 1;
-  justify-content: space-between;
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
 }
+
 .header-h2 {
-  font-family: monospace;
-  font-size: 30px;
+    font-family: monospace;
+    font-size: 30px;
+}
+
+.logout-btn {
+    padding: 15px;
+    background: pink;
+}
+
+.logout-btn:hover {
+    background: violet;
 }
