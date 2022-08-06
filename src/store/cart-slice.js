@@ -38,7 +38,7 @@ const cartSlice = createSlice({
             }
         },
         setShowCart(state) {
-            state.showCart = !state.showCart;
+            state.showCart =! state.showCart;
         }
     }
 })
